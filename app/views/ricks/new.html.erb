@@ -1,0 +1,21 @@
+<h1>Add a Rick</h1>
+
+<%= form_for @rick do |f| %>
+  <p> Your new Ricks name is:</p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <p> His age is:</p>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <p> And he is from dimension:</p>
+  <%= f.label :dimension %>
+  <%= f.text_field :dimension %>
+
+  <p> Has he been drinking:</p>
+  <%= f.label :drunk %>
+  <%= f.text_field :drunk %>
+
+  <%= f.submit "Create" %>
+<% end %>

@@ -1,6 +1,9 @@
 
 <h1>Ricks</h1>
 
-<% @ricks.each do |rick| %>
-  <p><%= rick.name %></p>
+<% @rick.each do |rick| %>
+  <p><%= link_to rick.name, rick_path(rick.id) %></p>
 <% end %>
+
+<hr>
+<%= link_to "[Create your own Ricks]", new_rick_path %>
