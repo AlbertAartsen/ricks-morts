@@ -2,4 +2,7 @@
 
 <p>Age: <%= @rick.age %></p>
 <p>Dimension: <%= @rick.dimension %></p>
-<p>State: <%= @rick.drunk %></p> 
+<p>State: <%= @rick.drunk %></p>
+
+<%= link_to "[Edit]", edit_rick_path(@rick.id) %>
+<%= link_to "[Destroy]", rick_path(@rick.id), method: :delete, data: { confirm: "Can You Kill a Rick? Click 'OK' and find out!" } %>

@@ -1,0 +1,18 @@
+<%= form_for @rick do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <%= f.label :dimension %>
+  <%= f.text_field :dimension %>
+
+  <%= f.label :drunk %>
+  <%= f.text_field :drunk %>
+
+
+  <%= f.submit (@rick.new_record? ? "Create" : "Update") %>
+
+<% end %>
